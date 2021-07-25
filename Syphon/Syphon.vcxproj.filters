@@ -4,6 +4,9 @@
     <Filter Include="Syphon">
       <UniqueIdentifier>{86F947D2-729B-72A8-5B56-86FC4797F9F8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Syphon\Events">
+      <UniqueIdentifier>{AAF2601A-16B3-DC50-DFED-25CE4B6D212D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Syphon.h" />
@@ -16,6 +19,18 @@
     <ClInclude Include="src\Syphon\EntryPoint.h">
       <Filter>Syphon</Filter>
     </ClInclude>
+    <ClInclude Include="src\Syphon\Events\ApplicationEvent.h">
+      <Filter>Syphon\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Syphon\Events\Event.h">
+      <Filter>Syphon\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Syphon\Events\KeyEvent.h">
+      <Filter>Syphon\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Syphon\Events\MouseEvent.h">
+      <Filter>Syphon\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Syphon\Log.h">
       <Filter>Syphon</Filter>
     </ClInclude>
@@ -23,6 +38,9 @@
   <ItemGroup>
     <ClCompile Include="src\Syphon\Application.cpp">
       <Filter>Syphon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Syphon\Events\ApplicationEvent.cpp">
+      <Filter>Syphon\Events</Filter>
     </ClCompile>
     <ClCompile Include="src\Syphon\Log.cpp">
       <Filter>Syphon</Filter>
