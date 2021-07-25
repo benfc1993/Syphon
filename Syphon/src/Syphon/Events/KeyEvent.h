@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Syphon
 {
 	class SYPHON_API KeyEvent : public Event

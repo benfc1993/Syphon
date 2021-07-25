@@ -1,3 +1,4 @@
+#include "sypch.h"
 #include "Application.h"
 
 #include "Syphon\Events\ApplicationEvent.h"

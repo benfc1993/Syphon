@@ -18,6 +18,9 @@ project "Syphon"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "sypch.h"
+	pchsource "Syphon/src/sypch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

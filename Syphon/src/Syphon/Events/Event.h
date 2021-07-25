@@ -2,9 +2,6 @@
 
 #include "Syphon\Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Syphon
 {
 	enum class EventType

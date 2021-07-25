@@ -34,16 +34,15 @@
     <ClInclude Include="src\Syphon\Log.h">
       <Filter>Syphon</Filter>
     </ClInclude>
+    <ClInclude Include="src\sypch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Syphon\Application.cpp">
       <Filter>Syphon</Filter>
     </ClCompile>
-    <ClCompile Include="src\Syphon\Events\ApplicationEvent.cpp">
-      <Filter>Syphon\Events</Filter>
-    </ClCompile>
     <ClCompile Include="src\Syphon\Log.cpp">
       <Filter>Syphon</Filter>
     </ClCompile>
+    <ClCompile Include="src\sypch.cpp" />
   </ItemGroup>
 </Project>
