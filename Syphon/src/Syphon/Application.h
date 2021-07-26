@@ -11,15 +11,15 @@ namespace Syphon
 	class SYPHON_API Application
 	{
 	public:
-		Application ();
-		virtual ~Application ();
+		Application();
+		virtual ~Application();
 
-		void Run ();
+		void Run();
 
-		void OnEvent ( Event& e );
+		void OnEvent( Event& e );
 
 	private:
-		bool OnWindowClose ( WindowCloseEvent& e );
+		bool OnWindowClose( WindowCloseEvent& e );
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
@@ -27,6 +27,5 @@ namespace Syphon
 
 
 	//To be defined in client
-	Application* CreateApplication ();
+	Application* CreateApplication();
 }
-
