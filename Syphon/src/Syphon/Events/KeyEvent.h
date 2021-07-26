@@ -24,14 +24,14 @@ namespace Syphon
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
 		//If error change back to: 
-		//inline int GetRepeatCount() const { return m_RepeatCount; }
-		inline bool HasRepeated() const { return m_RepeatCount > 1; }
+		inline int GetRepeatCount() const { return m_RepeatCount; }
+		//inline bool HasRepeated() const { return m_RepeatCount > 0; }
 
 		std::string ToString () const override
 		{
 			std::stringstream ss;
 			ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << " repeats)";
-			return ss;
+			return ss.str();
 		}
 
 		EVENT_CLASS_TYPE(KeyPressed)

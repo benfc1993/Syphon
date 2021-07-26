@@ -1,5 +1,6 @@
 #pragma once
 
+#include "sypch.h"
 #include "Syphon\Core.h"
 
 namespace Syphon
@@ -43,7 +44,7 @@ namespace Syphon
 			return GetCategoryFlags () & category;
 		}
 	protected:
-		bool m_handled = false;
+		bool m_Handled = false;
 	};
 
 	class EventDispatcher
