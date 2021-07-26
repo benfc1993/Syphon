@@ -7,6 +7,12 @@
     <Filter Include="Syphon\Events">
       <UniqueIdentifier>{AAF2601A-16B3-DC50-DFED-25CE4B6D212D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Syphon\Platform">
+      <UniqueIdentifier>{9A4C8652-06D8-F316-0FE9-760B7BF34F17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Syphon\Platform\Windows">
+      <UniqueIdentifier>{D4F0FB02-4028-449A-4932-A8BDB5E86A93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Syphon.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Syphon\Log.h">
       <Filter>Syphon</Filter>
     </ClInclude>
+    <ClInclude Include="src\Syphon\Platform\Windows\WindowsWindow.h">
+      <Filter>Syphon\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Syphon\Window.h">
+      <Filter>Syphon</Filter>
+    </ClInclude>
     <ClInclude Include="src\sypch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Syphon\Log.cpp">
       <Filter>Syphon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Syphon\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Syphon\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\sypch.cpp" />
   </ItemGroup>
