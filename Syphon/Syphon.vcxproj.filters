@@ -37,6 +37,12 @@
     <ClInclude Include="src\Syphon\Events\MouseEvent.h">
       <Filter>Syphon\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Syphon\Layer.h">
+      <Filter>Syphon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Syphon\LayerStack.h">
+      <Filter>Syphon</Filter>
+    </ClInclude>
     <ClInclude Include="src\Syphon\Log.h">
       <Filter>Syphon</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Syphon\Application.cpp">
+      <Filter>Syphon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Syphon\Layer.cpp">
+      <Filter>Syphon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Syphon\LayerStack.cpp">
       <Filter>Syphon</Filter>
     </ClCompile>
     <ClCompile Include="src\Syphon\Log.cpp">

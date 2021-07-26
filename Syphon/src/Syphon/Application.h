@@ -1,10 +1,11 @@
 #pragma once
 
 #include "Core.h"
-#include "Events/Event.h"
-#include "Syphon/Events/ApplicationEvent.h"
 
 #include "Window.h"
+#include "Events/Event.h"
+#include "Syphon/Events/ApplicationEvent.h"
+#include "Syphon/LayerStack.h"
 
 namespace Syphon
 {
@@ -18,11 +19,15 @@ namespace Syphon
 
 		void OnEvent( Event& e );
 
+		void PushLayer( Layer* layer );
+		void PopLayer( Layer* layer );
+
 	private:
 		bool OnWindowClose( WindowCloseEvent& e );
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+		LayerStack m_LayerStack;
 	};
 
 
