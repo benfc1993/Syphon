@@ -1,7 +1,7 @@
 workspace "Syphon"
 	architecture "x64"
 
-	configurations 
+	configurations
 	{
 		"Debug",
 		"Release",
@@ -41,7 +41,7 @@ project "Syphon"
 		"%{IncludeDir.GLFW}"
 	}
 
-	links 
+	links
 	{
 		"GLFW",
 		"opengl32.lib"
@@ -52,7 +52,7 @@ project "Syphon"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines 
+		defines
 		{
 			"SY_PLATFORM_WINDOWS",
 			"SY_BUILD_DLL"
@@ -65,7 +65,11 @@ project "Syphon"
 
 
 	filter "configurations:Debug"
-		defines "SY_DEBUG"
+		defines
+		{
+			"SY_DEBUG",
+			"SY_ENABLE_ASSERTS"
+		}
 		symbols "On"
 
 	filter "configurations:Release"
@@ -106,7 +110,7 @@ project "Sandbox"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines 
+		defines
 		{
 			"SY_PLATFORM_WINDOWS",
 		}

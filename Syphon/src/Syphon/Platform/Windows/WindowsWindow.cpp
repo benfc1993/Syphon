@@ -41,7 +41,8 @@ namespace Syphon
 
 		if (!s_GLFWInitialised)
 		{
-			glfwInit ();
+			int success = glfwInit ();
+			SY_CORE_ASSERT ( success, "Could not initialize GLFW!" );
 			s_GLFWInitialised = true;
 		}
 
